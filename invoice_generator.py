@@ -6,11 +6,11 @@ def generate_invoice(data):
     c = canvas.Canvas(file_name, pagesize=letter)
 
     #judul
-    c.setFont("Helvetica-Bold, 16")
+    c.setFont("Arial, 16")
     c.drawString(200, 750, "INVOICE")
 
     #info
-    c.setFont("Helvetica", 12)
+    c.setFont("Arial", 12)
     c.drawString(50, 700, f"Client: {data['client']}")
     c.drawString(50, 680, f"Tanggal: {data['date']}")
 
